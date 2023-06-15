@@ -6,16 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LaDonaGatona</title>
+  <link rel="shortcut icon" href="logotitle.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="header">
+  <header>
     <img class=logo src="pusheen.png" alt="logo">
     <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
       <ul class="nav__links">
         <li><a href="#">Donas</a></li>
         <li><a href="#">Cafés</a></li>
@@ -23,7 +28,7 @@
         <li><a href="#">Contáctanos</a></li>
       </ul>
     </nav>
-    <a class="cta" href="#"><button>Ordena aquí</button></a>
+    <a href="#"><button>Ordena aquí</button></a>
   </header>
 
   <main>
@@ -33,7 +38,8 @@
       <h1 class="title">Ven a probar <br>
         nuestras deliciosas donas <br>
         y si quieres ¡adota un gatito!</h1>
-      <p class="ingresainfo">Ingresa tu correo para recibir información sobre adopción de gatitos y promociones de donas disponibles</p>
+      <p class="ingresainfo">Ingresa tu correo para recibir información sobre adopción de gatitos y promociones de donas
+        disponibles</p>
 
       <div class="correo">
         <input class="input" type="email" placeholder="  Ingresa aquí tu correo">
@@ -43,111 +49,109 @@
 
   </main>
 
-    <section class="donnut">
+  <section class="container-fluid">
 
+    <h2 class="pt-5">Nuestros diferentes tipos de donas</h2>
+    <p>Aqui tenemos los diferentes tipos de donas que puedes encontrar
+      en nuestras tiendas.</p>
 
-      <div class="content container">
+    <section >
 
-        <h2>Nuestros diferentes tipos de donas</h2>
-        <p>Aqui tenemos los diferentes tipos de donas que puedes encontrar
-          en nuestras tiendas.</p>
+      <div class="donnutcontainer">
 
-        <section class="container-fluid">
-
-          <div class="donnutcontainer">
-
-              <div class="card" style="width: 18rem;">
-                <img src="donablanconrayas.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Raya Dona</h5>
-                  <p class="card-text"> Dona glaseada decorada con rayitas de chocolate, con relleno a elección.</p>
-                  <a href="#" class="btn btn-primary">Quiero pedirla</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="donachispitas.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Chispi Dona</h5>
-                  <p class="card-text">Dona glaseada decorada con chispitas de muchos colores, con relleno a elección. </p>
-                  <a href="#" class="btn btn-primary">Quiero pedirla</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="donadecoco.avif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Coco Dona</h5>
-                  <p class="card-text">Dona glaseada decorada con coco rallado, con relleno a elección.</p>
-                  <a href="#" class="btn btn-primary">Quiero pedirla</a>
-                </div>
-
-              </div>
-            
-            </div>
-
-    </section>
-<div>
-  <section class="contentgeneral">
-
-    <div class="general-1">
-      <h2>Adopta un gatito que lo necesita</h2>
-      
-      <p>
-        Contáctanos para recibir toda la información requerida para el proceso de adopción. <br>
-        Ten en cuenta que tu decision puede salvar a un gatito en situación de calle. <br>
-        ¡Agradecemos enromemente tu apoyo!
-      </p>
-      <a href="#" class="btn-2">Informacion</a>
-    </div>
-
-  </section>
-</div>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="footer-col">
-          <h4>Dona Gatona</h4>
-          <ul>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Nuestros Servicios</a></li>
-            <li><a href="#">Politica de Privacidad</a></li>
-            <li><a href="#">Trabaja con Nosotros</a></li>
-          </ul>
-
-        </div>
-        <div class="footer-col">
-          <h4>Categorias de Donas</h4>
-          <ul>
-            <li><a href="#">Donas tradicionales</a></li>
-            <li><a href="#">Donas rellenas</a></li>
-            <li><a href="#">Donas gatonas</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contáctanos</h4>
-          <ul>
-            <li><a href="#">Correo electrónico</a></li>
-            <li><a href="#">Whatsapp</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Síguenos</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="card" style="width: 18rem;">
+          <img src="donablanconrayas.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Raya Dona</h5>
+            <p class="card-text"> Dona glaseada decorada con rayitas de chocolate, con relleno a elección.</p>
+            <a href="#" class="btn btn-primary">Quiero pedirla</a>
           </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="donachispitas.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chispi Dona</h5>
+            <p class="card-text">Dona glaseada decorada con chispitas de muchos colores, con relleno a elección. </p>
+            <a href="#" class="btn btn-primary">Quiero pedirla</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="donadecoco.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Coco Dona</h5>
+            <p class="card-text">Dona glaseada decorada con coco rallado, con relleno a elección.</p>
+            <a href="#" class="btn btn-primary">Quiero pedirla</a>
+          </div>
+
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </footer>
+    <section class="contentgeneral g-0">
+
+      <div>
+        <h2>Adopta un gatito que lo necesita</h2>
+
+        <p>
+          Contáctanos para recibir toda la información requerida para el proceso de adopción. <br>
+          Ten en cuenta que tu decision puede salvar a un gatito en situación de calle. <br>
+          ¡Agradecemos enromemente tu apoyo!
+        </p>
+        <a href="#" class="btn-2">Informacion</a>
+      </div>
+
+    </section>
+
+  </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="footer-col">
+            <h4>Dona Gatona</h4>
+            <ul>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Nuestros Servicios</a></li>
+              <li><a href="#">Politica de Privacidad</a></li>
+              <li><a href="#">Trabaja con Nosotros</a></li>
+            </ul>
+
+          </div>
+          <div class="footer-col">
+            <h4>Categorias de Donas</h4>
+            <ul>
+              <li><a href="#">Donas tradicionales</a></li>
+              <li><a href="#">Donas rellenas</a></li>
+              <li><a href="#">Donas gatonas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contáctanos</h4>
+            <ul>
+              <li><a href="#">Correo electrónico</a></li>
+              <li><a href="#">Whatsapp</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
 </body>
 
 </html>

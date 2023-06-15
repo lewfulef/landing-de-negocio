@@ -1,27 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-@media (max-width: 760px){
-    .header {
-        width: 100%;
-        margin-bottom: 30px;
-    } 
+body {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 
 }
 
 li, a, button{
     display: flex;
-    justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: white;
     text-decoration: none;
+    list-style: none;
+}
+
+a {
+    list-style: none !important;
+    text-decoration: none !important;
 }
 
 header {
@@ -30,6 +35,7 @@ header {
     align-items: center; 
     background-color: lightsalmon;
     padding: 30px 10%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -49,13 +55,28 @@ header {
     display: flex;
     padding: 0px 20px;
 }
-git
+
 .nav__links li a {
     transition: all 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
     color: rgb(162, 92, 102);
+    text-decoration: none;
+}
+
+.checkbtn {
+    font-size: 18px;
+    color: #ffffff;
+    float: right;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check {
+    display: none;
 }
 
 button{
@@ -110,12 +131,13 @@ main {
 }
 .contentgeneral {
     display: flex;
-    color: #ffffff;
+    font-family: 'Poppins',sans-serif;
     min-height: 80vh;
-    background: linear-gradient(rgba(243, 211, 255, 0.75), rgba(122, 86, 112, 0.75)),url(adopta.jpeg) no-repeat center center fixed;
+    background: linear-gradient(rgba(243, 211, 255, 0.75), rgba(122, 86, 112, 0.75)),url(adopta.jpeg) center center fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
 }
 
 .btn-1 {
@@ -153,6 +175,27 @@ main {
 }
 
 .btn-1:hover {
+    background-color: #9a0436;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-2 {
+    width: 100px;
+    padding: 10px;
+    background-color: #df2c68;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-2:hover {
     background-color: #9a0436;
     text-decoration: none;
     color: #ffffff;
@@ -224,7 +267,7 @@ ul {
 }
 
 .container {
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     margin: auto;
     padding: 70px 0;
 }
@@ -245,11 +288,6 @@ p {
 .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.general-1 {
-
-    justify-content: center;
 }
 
 .footer {
@@ -322,14 +360,9 @@ p {
 
 
 @media (max-width: 760px){
-    .footer-col{
+
+    .nav__links .checkbtn .footer-col{
         width: 50%;
         margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 540px){
-    .footer-col{
-        width: 100%;
     }
 }
